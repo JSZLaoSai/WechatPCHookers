@@ -1,14 +1,13 @@
 函数位置：
     WeChatWin.dll+0x38DAB0
 
-调用方式：
+调用方式(示例位置WeChatWin.dll+0x1034A0)：
     push 0x1                                 ;  1
-    push edi                                 ;  0或@的人
-    push ebx                                 ;  内容
-    lea edx,dword ptr ss:[ebp-0x64]          ;  wxid
+    push edi                                 ;  0或@的人(详细格式待补充)
+    push ebx                                 ;  内容,传WxStr
+    lea edx,dword ptr ss:[ebp-0x64]          ;  wxid,传WxStr
     lea ecx,dword ptr ss:[ebp-0x798]         ;  大小0x798的缓冲区
     call WeChatWi.78EEDAB0                   ;  疑似2
     add esp,0xC
 
 调用示例(C)：
-    

@@ -1,0 +1,11 @@
+解释：
+    微信内大部分字符串都用此格式
+
+实现(C代码):
+    typedef struct _wxStr
+    {
+        WCHAR* pStr; //字符串指针
+        int strLen; //字符串长度
+        int strLen2; //意义不明，传字符串长度的2倍即可
+    } wxStr;
+

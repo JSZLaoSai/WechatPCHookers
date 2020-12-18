@@ -10,4 +10,5 @@
     call WeChatWi.78EEDAB0                   ;  调用
     add esp,0xC
 
-调用示例(C)：
+实现(C代码)：
+    大坑待填

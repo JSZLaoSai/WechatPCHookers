@@ -7,7 +7,7 @@
     push ebx                                 ;  内容,传WxStr
     lea edx,dword ptr ss:[ebp-0x64]          ;  wxid,传WxStr
     lea ecx,dword ptr ss:[ebp-0x798]         ;  大小0x798的缓冲区
-    call WeChatWi.78EEDAB0                   ;  疑似2
+    call WeChatWi.78EEDAB0                   ;  调用
     add esp,0xC
 
 调用示例(C)：
